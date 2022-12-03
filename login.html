@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>01</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <div class="main-pag">
+        <div class="layout-pag">
+            <div class="card-pag">
+                <h1>Cadastrar novas Raças</h1>
+                <h3 style="text-align:center">
+                    Dados da Raça
+                </h3>
+                <div class="textfield" >
+                    <label>Nome</label>
+                    <input id="n" type="text" placeholder="Nome" autocomplete="off">
+                </div>
+                <button class="btn-pag" onclick="addRaca(); showRaca()">Adicionar ao canio</button><br>
+            </div>
+            </div>
+            <div class="layout-pag">
+                <div class="card-pag">
+                    <h1>Raças já cadastradas</h1>
+                    <div class="textfield">
+                        <div id="r" ></div>
+                    </div>
+                    <div class="layout-pag2">
+                        <button class="btn-pag" onclick="clearRaca(); showRaca()"> Limpar </button>
+                        <button class="btn-pag" onclick="showRaca()"> Mostrar </button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

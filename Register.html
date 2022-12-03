@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>02</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <div class="main-pag">
+        <div class="layout-pag">
+            <div class="card-pag">
+                <h1>Cadastrar novo Cão</h1>
+                <h3 style="text-align:center">
+                    Dados da Cão
+                </h3>
+                <div class="textfield" >
+                    <label>Nome</label>
+                    <input id="n" type="text" placeholder="Nome" autocomplete="off">
+                    <br>
+                    <label>Sexo</label>
+                    <select name="sexo" id="s">
+                        <option value="" selected disabled hidden>Selecione a sexo</option>
+                        <option value="Fêmea">Fêmea</option>
+                        <option value="Macho">Macho</option>
+                    </select>
+                    <br>
+                    <label>Raça</label>
+                    <select name="Raça" id="r">
+                        <option value="" selected disabled hidden>Selecione a Raça</option>
+                        <option value="Bulldog">Bulldog</option>
+                        <option value="Shih Tzu">Shih Tzu</option>
+                        <option value="Rottweiler">Rottweiler</option>
+                        <option value="Pug">Pug</option>
+                        <option value="Golden Retriever">Golden Retriever</option>
+                        <option value=" Pastor Alemão">Pastor Alemão</option>
+                        <option value="Poodle">Poodle</option>
+                        <option value="Labrador">Labrador</option>
+                        <option value="Pinscher">Pinscher</option>
+                    </select>
+                    <br>
+                </div>
+                <button class="btn-pag" onclick="addCao(); showCao()">Adicionar ao canio</button><br>
+            </div>
+            </div>
+            <div class="layout-pag">
+                <div class="card-pag">
+                    <h1>Cães já cadastrados</h1>
+                    <div class="textfield">
+                        <div id="d"></div>
+                    </div>
+                    <div class="layout-pag2">
+                        <button class="btn-pag" onclick="clearCao(); showCao()"> Limpar </button>
+                        <button class="btn-pag" onclick="showCao()"> Mostrar </button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

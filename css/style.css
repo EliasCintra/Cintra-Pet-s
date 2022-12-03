@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans', SansSerif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+.main-pag{
+    width: auto;
+    height: 110vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.layout-pag{
+    width: 50vw;
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.layout-pag2{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.card-pag{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-pag > h1{
+    color: #00ff88;
+    mso-font-width: 800px;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.pag{
+    text-decoration-color: black;
+    text-align: center;
+}
+.a {
+    color: black;
+    text-align: center; 
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514069;
+    color: #f0ffffde;
+    font-size: 10pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > select{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514069;
+    color: #f0ffffde;
+    font-size: 10pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{
+    color: #f0ffff94;
+}
+
+.btn-pag{
+    width: 100%;
+    padding: 16px 16px 16px 16px ;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+@media only screen and (max-width: 950px){
+    .card-pag{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-pag{
+        flex-direction: column;
+    }
+    .left-pag > h1{
+        display: none;
+    }
+    .left-pag{
+        width: 100%;
+        height: auto;
+    }
+    .layout-pag{
+        width: 100%;
+        height: auto;
+    }
+    .left-pag>img{
+        width: 50vw;
+    }
+    .card-pag{
+        width: 90%;
+    }
+}
