@@ -40,21 +40,20 @@ function addCao(){
     }
 
     let nomeCao = document.getElementById("n").value;
-    cao.push(nomeCao);
+    cao.push("Nome: " + nomeCao);
     document.getElementById("n").value = "";
     localStorage.meuCao = JSON.stringify(cao);
 
     let sexoCao = document.getElementById("s").value;
-    cao.push(sexoCao);
+    cao.push("Sexo: " + sexoCao);
     document.getElementById("s").value = "";
     localStorage.meuCao = JSON.stringify(cao);
 
     let racaCao = document.getElementById("r").value;
-    cao.push(racaCao);
+    cao.push("Raça: " + racaCao);
     document.getElementById("r").value = "";
     localStorage.meuCao = JSON.stringify(cao);
 }
-
 
 function showCao(){
     let resultDIV = document.getElementById('d');

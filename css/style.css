@@ -8,6 +8,7 @@ body{
 body * {
     box-sizing: border-box;
 }
+
 .main-pag{
     width: auto;
     height: 110vh;
@@ -16,7 +17,6 @@ body * {
     justify-content: center;
     align-items: center;
 }
-
 
 .layout-pag{
     width: 50vw;
